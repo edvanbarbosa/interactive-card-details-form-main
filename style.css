@@ -122,4 +122,22 @@ form>div{
     width: 100%;
     text-align: center;
 }
+/* cards */
 
+.cards{
+    display: flex;
+    flex-direction: column;
+}
+
+.card_one{
+    width: 447px;
+    height: 245px;
+    background-image: url("images/bg-card-front.png");
+    color: #fff;
+}
+
+.card_two{
+    background-image: url("images/bg-card-back.png");
+    width: 447px;
+    height: 245px;
+}
