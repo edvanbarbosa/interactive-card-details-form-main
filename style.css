@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
+
 *{
     margin: 0px;
     padding: 0px;
@@ -7,6 +9,7 @@
 }
 body{
     height: 100vh;
+    font-family: 'Space Grotesk', sans-serif; 
 }
 main{
     display: flex;
@@ -16,24 +19,107 @@ main{
     background-image: url("images/bg-main-desktop.png");
     background-size: cover;
     height: 100%;
-    width: 26%;
+    width: 30%;
 }
 .two{
     display: none;
 }
 .one{
-    width: 74%;
+    width: 70%;
+    flex-direction: column;
     display: flex;
     align-items: center;
     justify-content: center;
+    
+}
+
+form div{
+    display: flex;
     flex-direction: column;
 }
 
-form>div{
-    display: flex;
-    flex-direction: column;
-}
+
+
 form{
     display: flex;
+    flex-direction: column; 
+    
+    
+    
+}
+button{
+    font-family: 'Space Grotesk', sans-serif; 
+    width: 60%;
+    height: 3.5em;
+    border-radius: 3.5px;
+    border: 0px solid transparent;
+    background-color: hsl(278, 68%, 11%);
+    color: #fff;
+   
+    letter-spacing: 1.2px;
+}
+
+label{
+    color:  hsl(278, 68%, 11%);
+    text-transform: uppercase;
+    font-size: 0.7em;
+    margin-bottom: 0.5em;
+    letter-spacing: 1.3px;
+    font-weight: 500;
+}
+.t{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.ipts{
+    display: flex;
+    flex-direction: row;
+}
+.date{
+    width: 30%;
+}
+
+#date_m{
+    margin-right: 1em;
+}
+
+.u input, .d input{
+    
+    width: 60%;
+
+}
+.date input{
+    width: 35%;
+}
+.cvc input{
+    width: 43%;
+}
+.cvc{
+    width: 70%;
+}
+input{
+    border-radius: 5px;
+    border: 1.4px solid hsl(270, 3%, 87%) ;
+    font-family: 'Space Grotesk', sans-serif; 
+    padding: 8px 5px ;
+    padding-left: 1em;
+}
+input:focus{
+    box-shadow: none;
+    outline: none;
+}
+input::placeholder{
+    font-family: 'Space Grotesk', sans-serif; 
+    color:  hsl(279, 6%, 55%);
+}
+
+form>div{
+    margin-bottom: 1em;
+}
+.btn{
+    width: 100%;
+    text-align: center;
 }
 

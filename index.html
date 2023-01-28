@@ -21,40 +21,48 @@
         <p class="cvc">000</p>
       </div>
       <div class="img_card">
-        <img src="images/bg-card-front.png" alt="">
+        <img src="images/bg-card-front.png" alt="" aria-hidden="true">
 
       </div>
     </div>
     <div class="card_two">
-      <img src="images/bg-card-back.png" alt="">
+      <img src="images/bg-card-back.png" alt="" aria-hidden="true">
     </div>
 </section>
   
     <section class="one">
-      <form action="post">
-        <div class="name">
-          <label for="ipt_name">Cardholder Name</label>
-          <input type="text" name="name" id="ipt_name" placeholder=" e.g. Jane Appleseed">
+      <form action="">
+        <div class="u">
+          <div class="name">
+            <label for="ipt_name">Cardholder Name</label>
+            <input type="text" name="name" id="ipt_name" placeholder=" e.g. Jane Appleseed">
+          </div>
+       
+        </div>
+        <div class="d">
+          <div class="number">
+            <label for="ipt_number">Card Number</label>
+            <input type="text" name="text" id="ipt_number" maxlength="16" placeholder=" e.g. 1234 5678 9123 0000">
+          </div>
         </div>
        
-        <div class="number">
-          <label for="ipt_number">Card Number</label>
-          <input type="text" name="text" id="ipt_number" placeholder=" e.g. 1234 5678 9123 0000">
+        <div class="t">
+          <div class="date">
+            <label for="date_m date_y">Exp. Date (MM/YY)</label>
+            <div class="ipts">
+              <input type="text" name="date_m" id="date_m" maxlength="2" placeholder="MM">
+              <input type="text" name="date_y" id="date_y" maxlength="2" placeholder=" YY">
+            </div>
+          </div>
+          <div class="cvc">
+            <label for="cvc">CVC</label>
+            <input type="text" name="cvc" id="cvc" maxlength="3" placeholder="e.g. 123">
+          </div>
+          </div>
         </div>
-       
-        <div class="date">
-          <label for="date_m date_y">Exp. Date (MM/YY)</label>
-          <input type="text" name="date_m" id="date_m" placeholder="MM">
-          <input type="text" name="date_y" id="date_y" placeholder=" YY">
-        </div>
-       
-        <div class="cvc">
-          <label for="cvc">CVC</label>
-          <input type="text" name="cvc" id="cvc" placeholder="e.g. 123">
-        </div>
-        
+        <button>Confirm</button>
       </form>
-      <button>Confirm</button>
+  
     </section>
   
     <!-- Completed state start -->
